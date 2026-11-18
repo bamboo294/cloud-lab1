@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My First Cloud Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#about" class="brand">
+        <span class="brand-badge">CLOUD LAB 01</span>
+        <span class="brand-title">My First Cloud Website</span>
+      </a>
+      <nav class="site-nav" aria-label="Main Navigation">
+        <a href="#about">About Me</a>
+        <a href="#cloud-computing">Cloud Computing</a>
+        <a href="#cloud-services">Cloud Services</a>
+        <a href="#deployment">Deployment</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero & About Me Section -->
+    <section id="about" class="section hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="pill">Introduction to Cloud Computing • Lab 01</div>
+          <h1>My First Cloud Website</h1>
+          <p class="subtitle">
+            Welcome to my cloud-hosted static website deployed via <strong>GitHub Pages</strong> over secure <strong>HTTPS</strong>.
+          </p>
+
+          <div class="student-card">
+            <h2 class="card-heading">About Me — Student Information</h2>
+            <div class="info-grid">
+              <div class="info-item">
+                <span class="info-label">Student Full Name</span>
+                <span class="info-value">Ngô Gia Bảo</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Student ID</span>
+                <span class="info-value highlight">24110081</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Course Name</span>
+                <span class="info-value">Introduction to Cloud Computing</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Lecturer</span>
+                <span class="info-value">Truong Thi Ngoc Phuong</span>
+              </div>
+            </div>
+            <p class="about-bio">
+              Hello! I am <strong>Ngô Gia Bảo</strong> (Student ID: <strong>24110081</strong>), an undergraduate student taking the <em>Introduction to Cloud Computing</em> course. In this first laboratory assignment, I designed, built, and deployed this responsive HTML5/CSS3 static website to the cloud to explore how global content delivery networks (CDNs) and managed static web hosting operate in practice.
+            </p>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <figure class="illustration-box">
+            <img src="assets/cloud.svg" alt="Cloud Computing Architecture and Service Models Illustration" />
+            <figcaption>Local vector illustration (<code>assets/cloud.svg</code>) depicting Cloud Hosting &amp; Service Models (IaaS, PaaS, SaaS).</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cloud Computing Section (80+ words in own words) -->
+    <section id="cloud-computing" class="section alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Core Concept</span>
+          <h2>What is Cloud Computing?</h2>
+        </div>
+        <div class="prose-card">
+          <p>
+            In my own words, <strong>cloud computing</strong> is the on-demand delivery of computing resources—including virtual servers, storage, databases, networking, software, and analytics—over the Internet instead of buying, owning, and maintaining physical data centers or local servers. Rather than investing heavily in hardware upfront and worrying about electricity, cooling, or hardware failures, individuals and organizations can provision resources within seconds from cloud providers and pay only for what they actually consume.
+          </p>
+          <p>
+            Beyond cost efficiency, cloud computing empowers developers with instant global reach, automatic scalability during traffic spikes, built-in redundancy, and high availability. Even for a lightweight static website like this project, hosting on the cloud transforms local HTML, CSS, and SVG files on a personal computer into a globally accessible web application served over encrypted HTTPS connections from distributed edge servers around the world.
+          </p>
+          <div class="word-count-badge">Word count: 144 words (Requirement: ≥ 80 words in own words)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cloud Services Section: IaaS, PaaS, SaaS -->
+    <section id="cloud-services" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Service Models</span>
+          <h2>Cloud Services: IaaS, PaaS, and SaaS</h2>
+          <p class="section-desc">Comparing the three fundamental cloud computing service models with real-world examples.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card iaas">
+            <div class="service-badge">IaaS</div>
+            <h3>Infrastructure as a Service</h3>
+            <p>
+              Provides virtualized computing infrastructure over the internet, including virtual machines, block storage, firewalls, and virtual networks. Users control the operating system, runtime, middleware, and deployed applications, while the cloud provider manages the underlying physical servers and data center hardware.
+            </p>
+            <div class="example-box">
+              <strong>Example:</strong> <span>Amazon EC2 (AWS Elastic Compute Cloud) / Google Compute Engine</span>
+            </div>
+          </article>
+
+          <article class="service-card paas">
+            <div class="service-badge">PaaS</div>
+            <h3>Platform as a Service</h3>
+            <p>
+              Delivers a fully managed hardware and software environment for building, deploying, and hosting applications without managing operating systems, server patches, or capacity planning. Developers simply push source code or static assets, and the platform handles builds, SSL certificates, and scaling.
+            </p>
+            <div class="example-box">
+              <strong>Example:</strong> <span>GitHub Pages / AWS Amplify Hosting / Google App Engine</span>
+            </div>
+          </article>
+
+          <article class="service-card saas">
+            <div class="service-badge">SaaS</div>
+            <h3>Software as a Service</h3>
+            <p>
+              Offers complete, ready-to-use software applications hosted and maintained entirely by the provider and accessed directly through a web browser or client app. End users do not manage any infrastructure, platforms, or code—they simply sign in and use the software.
+            </p>
+            <div class="example-box">
+              <strong>Example:</strong> <span>Google Workspace (Gmail, Google Docs) / Microsoft 365</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deployment Information Section -->
+    <section id="deployment" class="section alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Task 2 &amp; Task 3</span>
+          <h2>Deployment Information</h2>
+          <p class="section-desc">Details of the selected cloud hosting platform and public HTTPS endpoint.</p>
+        </div>
+
+        <div class="deployment-card">
+          <div class="deployment-row">
+            <span class="dep-label">Selected Hosting Option</span>
+            <span class="dep-value"><span class="status-dot"></span>Option B — GitHub Pages</span>
+          </div>
+          <div class="deployment-row">
+            <span class="dep-label">Student Name &amp; ID</span>
+            <span class="dep-value">Ngô Gia Bảo — 24110081</span>
+          </div>
+          <div class="deployment-row">
+            <span class="dep-label">GitHub Repository</span>
+            <span class="dep-value">
+              <a href="https://github.com/bamboo294/cloud-lab1" target="_blank" rel="noopener noreferrer">
+                https://github.com/bamboo294/cloud-lab1
+              </a>
+            </span>
+          </div>
+          <div class="deployment-row">
+            <span class="dep-label">Public HTTPS URL</span>
+            <span class="dep-value">
+              <a href="https://bamboo294.github.io/cloud-lab1/" target="_blank" rel="noopener noreferrer">
+                https://bamboo294.github.io/cloud-lab1/
+              </a>
+            </span>
+          </div>
+          <div class="deployment-row">
+            <span class="dep-label">Branch &amp; Root Directory</span>
+            <span class="dep-value"><code>main</code> branch • <code>/ (root)</code> folder</span>
+          </div>
+          <div class="deployment-row">
+            <span class="dep-label">Security &amp; Delivery</span>
+            <span class="dep-value">Enforced TLS/HTTPS Certificate • Global Fastly CDN Edge Delivery</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>My First Cloud Website</strong> • Lab 01: Deploy Your First Static Website to the Cloud</p>
+      <p>Student: <strong>Ngô Gia Bảo</strong> (ID: <strong>24110081</strong>) • Course: Introduction to Cloud Computing</p>
+    </div>
+  </footer>
+</body>
+</html>
